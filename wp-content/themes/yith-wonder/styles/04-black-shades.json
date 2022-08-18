@@ -1,0 +1,64 @@
+{
+	"version": 2,
+	"title": "Black Shades",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "background",
+					"color": "#ffffff",
+					"name": "Background"
+				},
+				{
+					"slug": "foreground",
+					"color": "#000000",
+					"name": "Foreground"
+				},
+				{
+					"slug": "primary",
+					"color": "#000000",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#3f403e",
+					"name": "Secondary"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#808080",
+					"name": "Tertiary"
+				},
+				{
+					"slug": "secondary-background",
+					"color": "#000000",
+					"name": "Secondary background"
+				},
+				{
+					"slug": "secondary-foreground",
+					"color": "#ffffff",
+					"name": "Secondary foreground"
+				}
+			],
+			"gradients": [
+				{
+					"slug": "v-tertiary-primary",
+					"gradient": "linear-gradient(to bottom, #000000 0%,#808080 100%)",
+					"name": "Vertical primary to secondary"
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--jost)"
+		},
+		"blocks": {
+			"core/heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--merriweather)"
+				}
+			}
+		}
+	}
+}

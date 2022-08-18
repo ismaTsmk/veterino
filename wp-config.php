@@ -86,8 +86,9 @@ $table_prefix = 'wp_';
  *
  * @link https://fr.wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
-
+define('WP_DEBUG', true); // To enable debugging. Leave things just like this to output errors, warnings, notices to the screen:
+define( 'WP_DEBUG_LOG', true ); // To turn on logging
+define( 'WP_DEBUG_DISPLAY', false ); // To prevent output of errors, warnings, notices to the screen (which I personally find SUPER annoying):
 /* C’est tout, ne touchez pas à ce qui suit ! Bonne publication. */
 
 /** Chemin absolu vers le dossier de WordPress. */

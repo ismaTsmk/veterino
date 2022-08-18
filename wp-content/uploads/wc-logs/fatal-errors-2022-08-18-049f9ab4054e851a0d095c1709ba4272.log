@@ -1,0 +1,357 @@
+2022-08-18T10:31:33+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "filter user" not found or invalid function name in C:\wamp64\www\veterino\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#3 C:\wamp64\www\veterino\wp-includes\template-canvas.php(25): wp_footer()
+#4 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#5 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#6 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#7 {main}
+  thrown dans C:\wamp64\www\veterino\wp-includes\class-wp-hook.php à la ligne 307
+
+2022-08-18T11:20:31+00:00 CRITICAL Uncaught ArgumentCountError: 4 arguments are required, 1 given in C:\wamp64\www\veterino\wp-content\themes\yith-wonder\woocommerce\myaccount\dashboard.php:60
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\themes\yith-wonder\woocommerce\myaccount\dashboard.php(60): printf('\xC3\x80 partir du ta...')
+#1 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3168): wc_get_template('myaccount/dashb...', Array)
+#3 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): woocommerce_account_content('')
+#4 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#6 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\templates\myaccount\my-account.php(34): do_action('woocommerce_acc...')
+#7 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\v...')
+#8 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#9 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#10 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_My_Account::output('')
+#11 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Array, '')
+#12 C:\wamp64\www\veterino\wp-includes\shortcodes.php(356): WC_Shortcodes::my_account('', '', 'woocommerce_my_...')
+#13 [internal function]: do_shortcode_tag(Array)
+#14 C:\wamp64\www\veterino\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_my...')
+#15 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): do_shortcode('[woocommerce_my...')
+#16 C:\wamp64\www\veterino\wp-includes\plugin.php(191): WP_Hook->apply_filters('[woocommerce_my...', Array)
+#17 C:\wamp64\www\veterino\wp-includes\blocks\post-content.php(55): apply_filters('the_content', '<!-- wp:shortco...')
+#18 C:\wamp64\www\veterino\wp-includes\class-wp-block.php(255): render_block_core_post_content(Array, '<!-- wp:shortco...', Object(WP_Block))
+#19 C:\wamp64\www\veterino\wp-includes\class-wp-block.php(241): WP_Block->render()
+#20 C:\wamp64\www\veterino\wp-includes\blocks.php(901): WP_Block->render()
+#21 C:\wamp64\www\veterino\wp-includes\blocks.php(939): render_block(Array)
+#22 C:\wamp64\www\veterino\wp-includes\block-template.php(240): do_blocks('<!-- wp:templat...')
+#23 C:\wamp64\www\veterino\wp-includes\template-canvas.php(12): get_the_block_template_html()
+#24 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#25 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#26 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#27 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\themes\yith-wonder\woocommerce\myaccount\dashboard.php à la ligne 60
+
+2022-08-18T11:20:45+00:00 CRITICAL Uncaught ArgumentCountError: 4 arguments are required, 1 given in C:\wamp64\www\veterino\wp-content\themes\yith-wonder\woocommerce\myaccount\dashboard.php:60
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\themes\yith-wonder\woocommerce\myaccount\dashboard.php(60): printf('\xC3\x80 partir du ta...')
+#1 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\v...')
+#2 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3168): wc_get_template('myaccount/dashb...', Array)
+#3 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): woocommerce_account_content('')
+#4 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#6 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\templates\myaccount\my-account.php(34): do_action('woocommerce_acc...')
+#7 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\v...')
+#8 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#9 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#10 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_My_Account::output('')
+#11 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Array, '')
+#12 C:\wamp64\www\veterino\wp-includes\shortcodes.php(356): WC_Shortcodes::my_account('', '', 'woocommerce_my_...')
+#13 [internal function]: do_shortcode_tag(Array)
+#14 C:\wamp64\www\veterino\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_my...')
+#15 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): do_shortcode('[woocommerce_my...')
+#16 C:\wamp64\www\veterino\wp-includes\plugin.php(191): WP_Hook->apply_filters('[woocommerce_my...', Array)
+#17 C:\wamp64\www\veterino\wp-includes\blocks\post-content.php(55): apply_filters('the_content', '<!-- wp:shortco...')
+#18 C:\wamp64\www\veterino\wp-includes\class-wp-block.php(255): render_block_core_post_content(Array, '<!-- wp:shortco...', Object(WP_Block))
+#19 C:\wamp64\www\veterino\wp-includes\class-wp-block.php(241): WP_Block->render()
+#20 C:\wamp64\www\veterino\wp-includes\blocks.php(901): WP_Block->render()
+#21 C:\wamp64\www\veterino\wp-includes\blocks.php(939): render_block(Array)
+#22 C:\wamp64\www\veterino\wp-includes\block-template.php(240): do_blocks('<!-- wp:templat...')
+#23 C:\wamp64\www\veterino\wp-includes\template-canvas.php(12): get_the_block_template_html()
+#24 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#25 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#26 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#27 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\themes\yith-wonder\woocommerce\myaccount\dashboard.php à la ligne 60
+
+2022-08-18T11:59:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_userdata(), 0 passed in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php on line 22 and exactly 1 expected in C:\wamp64\www\veterino\wp-includes\pluggable.php:83
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(22): get_userdata()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-includes\template-canvas.php(25): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#8 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#9 {main}
+  thrown dans C:\wamp64\www\veterino\wp-includes\pluggable.php à la ligne 83
+
+2022-08-18T12:00:20+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_usermeta(), 0 passed in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php on line 22 and at least 1 expected in C:\wamp64\www\veterino\wp-includes\deprecated.php:2271
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(22): get_usermeta()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-includes\template-canvas.php(25): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#8 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#9 {main}
+  thrown dans C:\wamp64\www\veterino\wp-includes\deprecated.php à la ligne 2271
+
+2022-08-18T15:42:21+00:00 CRITICAL Uncaught Error: Object of class DateTime could not be converted to string in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:22
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(38): orderCoupon()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-includes\template-canvas.php(25): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#8 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#9 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 22
+
+2022-08-18T15:43:09+00:00 CRITICAL Uncaught Error: Object of class DateTime could not be converted to string in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:22
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(38): orderCoupon()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-includes\template-canvas.php(25): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#8 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#9 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 22
+
+2022-08-18T15:43:17+00:00 CRITICAL Uncaught ArgumentCountError: mktime() expects at least 1 argument, 0 given in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:25
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(25): mktime()
+#1 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(38): orderCoupon()
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#3 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#6 C:\wamp64\www\veterino\wp-includes\template-canvas.php(25): wp_footer()
+#7 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#8 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#9 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#10 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 25
+
+2022-08-18T15:43:25+00:00 CRITICAL Uncaught ArgumentCountError: mktime() expects at least 1 argument, 0 given in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:25
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(25): mktime()
+#1 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(38): orderCoupon()
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#3 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#6 C:\wamp64\www\veterino\wp-includes\template-canvas.php(25): wp_footer()
+#7 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#8 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#9 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#10 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 25
+
+2022-08-18T15:46:31+00:00 CRITICAL Uncaught Error: Call to undefined function new DateInterval() in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:22
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(39): orderCoupon()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-includes\template-canvas.php(25): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#8 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#9 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 22
+
+2022-08-18T16:29:26+00:00 CRITICAL Uncaught WC_Data_Exception: Type de remise non valide in C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:856
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-coupon.php(527): WC_Data->error('coupon_invalid_...', 'Type de remise ...')
+#1 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(34): WC_Coupon->set_discount_type('')
+#2 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(52): orderCoupon()
+#3 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#4 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#6 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#7 C:\wamp64\www\veterino\wp-includes\template-canvas.php(25): wp_footer()
+#8 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#9 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#10 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#11 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php à la ligne 856
+
+2022-08-18T16:31:25+00:00 CRITICAL Uncaught WC_Data_Exception: Type de remise non valide in C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:856
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-coupon.php(527): WC_Data->error('coupon_invalid_...', 'Type de remise ...')
+#1 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(34): WC_Coupon->set_discount_type('')
+#2 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(52): orderCoupon()
+#3 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#4 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#6 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#7 C:\wamp64\www\veterino\wp-includes\template-canvas.php(25): wp_footer()
+#8 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#9 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#10 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#11 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php à la ligne 856
+
+2022-08-18T16:31:56+00:00 CRITICAL Uncaught WC_Data_Exception: Type de remise non valide in C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:856
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-coupon.php(527): WC_Data->error('coupon_invalid_...', 'Type de remise ...')
+#1 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(34): WC_Coupon->set_discount_type('')
+#2 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(52): orderCoupon()
+#3 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#4 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#6 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#7 C:\wamp64\www\veterino\wp-includes\template-canvas.php(25): wp_footer()
+#8 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#9 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#10 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#11 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php à la ligne 856
+
+2022-08-18T16:34:54+00:00 CRITICAL Uncaught WC_Data_Exception: Type de remise non valide in C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:856
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-coupon.php(527): WC_Data->error('coupon_invalid_...', 'Type de remise ...')
+#1 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(34): WC_Coupon->set_discount_type('cash_back_perce...')
+#2 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(52): orderCoupon()
+#3 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#4 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#6 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#7 C:\wamp64\www\veterino\wp-includes\template-canvas.php(25): wp_footer()
+#8 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#9 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#10 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#11 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php à la ligne 856
+
+2022-08-18T16:35:13+00:00 CRITICAL Uncaught WC_Data_Exception: Type de remise non valide in C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:856
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-coupon.php(527): WC_Data->error('coupon_invalid_...', 'Type de remise ...')
+#1 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(34): WC_Coupon->set_discount_type('cash_back_perce...')
+#2 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(52): orderCoupon()
+#3 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#4 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#6 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#7 C:\wamp64\www\veterino\wp-includes\template-canvas.php(25): wp_footer()
+#8 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#9 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#10 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#11 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php à la ligne 856
+
+2022-08-18T18:15:42+00:00 CRITICAL Uncaught Error: Call to undefined function dump() in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:21
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(309): createPoints(44)
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-checkout.php(1194): do_action('woocommerce_che...', 44, Array, Object(Automattic\WooCommerce\Admin\Overrides\Order))
+#4 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(461): WC_Checkout->process_checkout()
+#5 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): WC_AJAX::checkout('')
+#6 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#7 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#8 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(90): do_action('wc_ajax_checkou...')
+#9 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): WC_AJAX::do_wc_ajax('')
+#10 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(false, Array)
+#11 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#12 C:\wamp64\www\veterino\wp-includes\template-loader.php(13): do_action('template_redire...')
+#13 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#14 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#15 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 21
+
+2022-08-18T19:02:11+00:00 CRITICAL Uncaught Error: Cannot use object of type Automattic\WooCommerce\Admin\Overrides\Order as array in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:35
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): woo_change_order_received_text('Merci. Votre co...', Object(Automattic\WooCommerce\Admin\Overrides\Order))
+#1 C:\wamp64\www\veterino\wp-includes\plugin.php(191): WP_Hook->apply_filters('Merci. Votre co...', Array)
+#2 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(42): apply_filters('woocommerce_tha...', 'Merci. Votre co...', Object(Automattic\WooCommerce\Admin\Overrides\Order))
+#3 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\v...')
+#4 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(276): wc_get_template('checkout/thanky...', Array)
+#5 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(61)
+#6 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#7 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#8 C:\wamp64\www\veterino\wp-includes\shortcodes.php(356): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#9 [internal function]: do_shortcode_tag(Array)
+#10 C:\wamp64\www\veterino\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#11 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): do_shortcode('[woocommerce_ch...')
+#12 C:\wamp64\www\veterino\wp-includes\plugin.php(191): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#13 C:\wamp64\www\veterino\wp-includes\post-template.php(253): apply_filters('the_content', '<!-- wp:shortco...')
+#14 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\template-parts\content.php(36): the_content('Lire la suite')
+#15 C:\wamp64\www\veterino\wp-includes\template.php(772): require('C:\\wamp64\\www\\v...')
+#16 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', false, Array)
+#17 C:\wamp64\www\veterino\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#18 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(24): get_template_part('template-parts/...', 'page')
+#19 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#20 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#21 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#22 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 35
+
+2022-08-18T19:02:17+00:00 CRITICAL Uncaught Error: Cannot use object of type Automattic\WooCommerce\Admin\Overrides\Order as array in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:35
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): woo_change_order_received_text('Merci. Votre co...', Object(Automattic\WooCommerce\Admin\Overrides\Order))
+#1 C:\wamp64\www\veterino\wp-includes\plugin.php(191): WP_Hook->apply_filters('Merci. Votre co...', Array)
+#2 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(42): apply_filters('woocommerce_tha...', 'Merci. Votre co...', Object(Automattic\WooCommerce\Admin\Overrides\Order))
+#3 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\v...')
+#4 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(276): wc_get_template('checkout/thanky...', Array)
+#5 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(61)
+#6 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#7 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#8 C:\wamp64\www\veterino\wp-includes\shortcodes.php(356): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#9 [internal function]: do_shortcode_tag(Array)
+#10 C:\wamp64\www\veterino\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#11 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): do_shortcode('[woocommerce_ch...')
+#12 C:\wamp64\www\veterino\wp-includes\plugin.php(191): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#13 C:\wamp64\www\veterino\wp-includes\post-template.php(253): apply_filters('the_content', '<!-- wp:shortco...')
+#14 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\template-parts\content.php(36): the_content('Lire la suite')
+#15 C:\wamp64\www\veterino\wp-includes\template.php(772): require('C:\\wamp64\\www\\v...')
+#16 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', false, Array)
+#17 C:\wamp64\www\veterino\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#18 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(24): get_template_part('template-parts/...', 'page')
+#19 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#20 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#21 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#22 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 35
+
+2022-08-18T19:02:26+00:00 CRITICAL Uncaught Error: Cannot use object of type Automattic\WooCommerce\Admin\Overrides\Order as array in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:35
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): woo_change_order_received_text('Merci. Votre co...', Object(Automattic\WooCommerce\Admin\Overrides\Order))
+#1 C:\wamp64\www\veterino\wp-includes\plugin.php(191): WP_Hook->apply_filters('Merci. Votre co...', Array)
+#2 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(42): apply_filters('woocommerce_tha...', 'Merci. Votre co...', Object(Automattic\WooCommerce\Admin\Overrides\Order))
+#3 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\v...')
+#4 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(276): wc_get_template('checkout/thanky...', Array)
+#5 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(61)
+#6 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#7 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#8 C:\wamp64\www\veterino\wp-includes\shortcodes.php(356): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#9 [internal function]: do_shortcode_tag(Array)
+#10 C:\wamp64\www\veterino\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#11 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): do_shortcode('[woocommerce_ch...')
+#12 C:\wamp64\www\veterino\wp-includes\plugin.php(191): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#13 C:\wamp64\www\veterino\wp-includes\post-template.php(253): apply_filters('the_content', '<!-- wp:shortco...')
+#14 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\template-parts\content.php(36): the_content('Lire la suite')
+#15 C:\wamp64\www\veterino\wp-includes\template.php(772): require('C:\\wamp64\\www\\v...')
+#16 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', false, Array)
+#17 C:\wamp64\www\veterino\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#18 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(24): get_template_part('template-parts/...', 'page')
+#19 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#20 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#21 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#22 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 35
+
