@@ -3,13 +3,49 @@
 <head>
     <meta name="viewport" content="width=device-width" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>WordPress &#8250; À lire</title>
 	<link rel="stylesheet" href="wp-admin/css/install.css?ver=20100228" type="text/css" />
 </head>
 <body>
 <h1 id="logo">
 	<a href="https://wordpress.org/"><img alt="WordPress" src="wp-admin/images/wordpress-logo.png" /></a>
 </h1>
+
+
+<div style="margin: 3rem 0px;">
+	<p style="text-align: center">Merci de cloner le projets si vous souhaitez consultez le code, <br> 
+	comme promis pour visualiser le projets cliquez ci-dessous:  <br>
+	<a href="https://veterino.tismatek.com/">consultez le projets</a>
+	<a href="https://veterino.tismatek.com/wp-admin">espace admin</a>
+	</p>
+		<ul><li>id : admin</li><li>mdp : admin</li></ul>
+
+<h2>Remarques</h2>
+<p>Pour gagner des points veuilliez acheter des produis et passer commandes.</p>
+<p>Pour consultez vos points accèder a votre espace personelles, rubrique points de fidelitées.</p>
+<p>Pour génerer des codes promo sur la rubrique points de fidelites, bouger le curseur et cliquer sur le bouton générer en fonction de votre nombre de points</p>
+<p>l'afficahge du curseur varient selont le nombre de points, certaine règle ont etait appliquer également, amusez vous sur la génération de code promo, les points changerons automatiquement et vous recevrai un email  </p>
+<p>Concernant l'envoie de mail je n'ai malhresement pas pu les envoyers avec sendinblue, car cela necessiter une autorisation pour les envoie de mail transactionelles, demande qui à était refuser, vous y trouverai tout de meme dans le code le test qui à était effectuer dans le footer, avec le message d'erreur indiquer , voir screenshot plus bas </p>
+<p>J'ai tester egalement avec le service de mailchimp mais malkhresement leur version gratuite est très limite et permettent d'envouer seulemnt à des mail du domaine authentifier ce qui n'aurai pas fonctionner. l'integration d'api n'est pas un problème, seulemnt problématique d'accès du coup j'ai confurer avec les système natif de wordpress</p>
+<img src="https://veterino.tismatek.com/wp-content/uploads/2022/08/Capture-decran-2022-08-22-165820.jpg" alt="screen qui montre les erreur et problématique de version gratuite liée au api de mail transactionelles" />
+
+
+<h2>Installation : la fameuse installation en 5 minutes</h2>
+<ol>
+	<li>Décompressez l’archive dans un dossier vide de votre ordinateur, puis téléversez tous ces fichiers ;</li>
+	<li>Envoyez le tout sur votre hébergement via un logiciel client FTP ;</li>
+	<li>Ouvrez le fichier <span class="file"><a href="wp-admin/install.php">/wp-admin/install.php</a></span> dans votre navigateur. Celui-ci vous guidera dans la création du fichier <code>wp-config.php</code>, qui contient les détails de connexion à votre base de données ;
+		<ol>
+			<li>Si cela ne fonctionne pas, ne vous inquiétez pas : certains hébergeurs n’autorisent pas la création de fichier. Ouvrez le fichier <code>wp-config.php</code> avec un éditeur de texte, et saisissez-y directement les détails de connexion à votre base de données ;</li>
+			<li>Enregistrez le fichier sous le nom <code>wp-config.php</code> et téléversez-le ;</li>
+			<li>Ouvrez le fichier  <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span> dans votre navigateur ;</li>
+		</ol>
+	</li>
+	<li>Une fois le fichier de configuration correctement rempli, l’installateur met en place les tables nécessaires à votre blog. Si vous obtenez une erreur, vérifiez le contenu du fichier <span class="file"><code>wp-config.php</code></span>, et réessayez. Si cela échoue encore une fois, rendez-vous sur les <a href="http://www.wordpress-fr.net/support/">forums d’entraide</a> et soyez le plus précis possible dans vos explications. Si tout se passe bien, passez à l’étape suivante ;</li>
+	<li><strong>Si vous n’avez pas précisé de mot de passe, notez bien celui qui vous est donné.</strong> Si vous n’avez pas précisé d’identifiant utilisateur, ce sera <code>admin</code> ;</li>
+	<li>Une fois l’installation terminée, le script d’installation vous renverra vers la <a href="wp-login.php">page de connexion</a>. Connectez-vous avec l’identifiant et le mot de passe précisés (ou générés) durant l’installation. Si le mot de passe a été généré pour vous, cliquez sur « Profil »  pour le modifier.</li>
+</ol>
+
+</div>
 <p style="text-align: center">Plateforme de publication sémantique personnelle</p>
 
 <h2>Préambule</h2>

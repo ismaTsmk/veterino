@@ -114,18 +114,15 @@ add_action('woocommerce_account_loyalty_endpoint', 'my_loyalty_endpoint_content'
 
 add_filter('woocommerce_thankyou_order_received_text', 'woo_change_order_received_text', 10, 2);
 
+/**
+ * fonction qui change le texte par default de confirmation de commandes
+ */
+
 function woo_change_order_received_text($str, $order)
 {
     $points =  get_user_meta($order->data['customer_id'], "points")[0];
     $new_str = 'Suite à votre commande vous avez maintenant <strong class="text-success">' . $points . '  points de fidelitées</strong>  ';
-    ($points > 49) && $new_str .= "<br/> Vous pouvez dès a présent génerer un code promo pour vos prochains achats";
-    // dump([
-    //     "customer_id" => $order->data['customer_id'],
-    //     "order"=>$order->data['customer_id']
-    // ]);
-    print_r($order->data);
-    echo "<br> okeyy <br>";
-    print_r($order);
+    ($points > 49) && $new_str .= "<br/> Vous pouvez dès à présent générer un code promo pour vos prochains achats.";
 
     return $new_str;
 }
@@ -138,126 +135,41 @@ function createPoints($order_id)
     $customer_id = $order->customer_id;
     $currents_points = (int) get_user_meta($customer_id, "points")[0];
     $newPoints = (int) $currents_points + (int) floor($total * 0.05);
-    // dd([
-    //     "newPoints = " =>  $newPoints,
-    //     "currents_points = " =>$currents_points,
-    //     "floor() = " => floor($total*0.05)
-    // ]);
     update_user_meta($customer_id, "points", $newPoints);
 }
-
+/**
+ * Au moment du paiement reussi, pendant le process de redirection, ajoute les points de fidelitées 
+ * à l'utilisateurs  en respectant les contraintes de 5 % arroendis à l'entier inferieur
+ */
 add_action('woocommerce_checkout_order_processed', 'createPoints', 10, 1);
 
 
-// This just echoes the chosen line, we'll position it later.
+/**
+ * test fonction sur footer 
+ */
 function hello_dolly()
 {
     // orderCoupon();
-    global $woocommerce;
+    // global $woocommerce;
 
-    $current_user = wp_get_current_user();
+    // $current_user = wp_get_current_user();
 
-    $points = get_user_meta($current_user->ID, "points");
-    $other_user = get_users();
-    $customer_country = $woocommerce->customer->get_billing_country();
-
-
+    // $points = get_user_meta($current_user->ID, "points");
+    // $other_user = get_users();
+    // $customer_country = $woocommerce->customer->get_billing_country();
 
     send_mail();
-
     echo "it's me ";
 
-    // var_dump($points);
-    // dump("eeeee");
-
 }
-
-// Now we set that function up to execute when the admin_notices action is called.
 add_action('wp_footer', 'hello_dolly');
 
 
 
-
-function filter_user($user)
-{
-    echo "okeyy manyy";
-    return sprintf(
-        $user
-    );
-}
-
-add_filter('validate_username  ', 'filter_user');
-
-
-// We need some CSS to position the paragraph.
-function dolly_css()
-{
-    echo "
-	<style type='text/css'>
-	#dolly {
-		float: right;
-		padding: 5px 10px;
-		margin: 0;
-		font-size: 12px;
-		line-height: 1.6666;
-	}
-	.rtl #dolly {
-		float: left;
-	}
-	.block-editor-page #dolly {
-		display: none;
-	}
-	@media screen and (max-width: 782px) {
-		#dolly,
-		.rtl #dolly {
-			float: none;
-			padding-left: 0;
-			padding-right: 0;
-		}
-	}
-	</style>
-	";
-}
-
-add_action('admin_head', 'dolly_css');
-
-
-
 /**
- * Add the field to the checkout
+ * ajout du endpoint en post pour la requette ajax de création de coupon de reduction 
+ * url => http://localhost/veterino/generate/coupon
  */
-// add_action('woocommerce_after_order_notes', 'my_custom_checkout_field');
-
-function my_custom_checkout_field($checkout)
-{
-
-    echo '<div id="my_custom_checkout_field"><h2>' . __('Code Promo') . '</h2>';
-
-    woocommerce_form_field('my_field_name', array(
-        'type'          => 'text',
-        'class'         => array('my-field-class form-row-wide'),
-        'label'         => __('Entrer un code promo maintenant'),
-        'placeholder'   => __('ex  : azerty9874'),
-        'required'   => "true",
-
-    ), $checkout->get_value('promo_code'));
-
-    echo '</div>';
-}
-
-
-
-// endpoint add 
-//http://localhost/veterino/wp-json/myplugin/v1/author
-add_action('rest_api_init', function () {
-    register_rest_route('generate', '/coupon', array(
-        'methods' => 'GET',
-        'callback' => 'orderCoupon',
-    ));
-});
-
-// endpoint add 
-//http://localhost/veterino/wp-json/myplugin/v1/author
 add_action('rest_api_init', function () {
     register_rest_route('generate', '/coupon', array(
         'methods' => 'POST',
@@ -265,7 +177,11 @@ add_action('rest_api_init', function () {
     ));
 });
 
-
+/**
+ * génere un code promo et reduis les points de fidelité en fonction du pourcent choisis
+ * les code promo ont une limite de 100 %, pour un maximum de 200 euro d'achat, ce qui veut dire que malgrès le fait que il peuvent générer un code de 100 %; sur 200 euro max
+ * cela equivaut a une réduction de 5 % car il lui faudrait avoir effectuer 2000 € d'achat pour atteindre les 100 points de fidelitées 
+ */
 function orderCoupon(WP_REST_Request $request)
 {
     $data = $request->get_params();
@@ -282,18 +198,17 @@ function orderCoupon(WP_REST_Request $request)
 
     if ($percent_choice > $user_points   ) {
         
-        wp_send_json(["response" => "ko", "message" => "erreur renconter pourcentage superieur au nombre de points acquis","mail"=>$user_email,"user_points"=>$user_points,"percent_choice"=>$percent_choice]);
+        wp_send_json(["response" => "ko", "message" => "Erreur rencontrer, pourcentage supérieur au nombre de points acquis","mail"=>$user_email,"user_points"=>$user_points,"percent_choice"=>$percent_choice]);
 
     } elseif ($percent_choice > 100) {
-        wp_send_json(["response" => "ko", "message" => "une erreur est survenue, le pourcentage dépasse la limite maximale autoriser"]);
+        wp_send_json(["response" => "ko", "message" => "Une erreur est survenue, le pourcentage dépasse la limite maximale autorisée."]);
 
     } elseif ($user_points < 50) {
-        wp_send_json(["response" => "ko", "message" => "Ils vous faut au minimum 50 points pour pouvoir généerer un code promo","user_points"=>$user_points]);
+        wp_send_json(["response" => "ko", "message" => "Il vous faut au minimum 50 points pour pouvoir générer un code promo.","user_points"=>$user_points]);
     }
 
 
 
-    wp_send_mail();
 
     $newPoints =$user_points - $percent_choice;
 
@@ -317,8 +232,9 @@ function orderCoupon(WP_REST_Request $request)
     $coupon->set_individual_use(true); // Discount amount
     $coupon->set_maximum_amount(200); // Discount amount
 
+    wp_send_mail($user_email,$code,$percent_choice);
 
-    $coupon->set_description("coupon generer automatiquement par le clients grace à ces points de fidelités"); // Discount amount
+    $coupon->set_description("Coupon généré automatiquement par le clients grâce à ces points de fidélités"); // Discount amount
 
     $message = [
         "from_email" => "contact@h-vibes.fr",
@@ -336,7 +252,7 @@ function orderCoupon(WP_REST_Request $request)
     $response = $coupon->save();
     if ($coupon->save() ) {
         update_user_meta($user_id, "points", $newPoints);
-    }else wp_send_json(["response" => "ko", "message" => "le coupon n'a pas pu etre générer suite a une erreur inconue"]);
+    }else wp_send_json(["response" => "ko", "message" => "Le coupon n'a pas pu être généré suite à une erreur inconnue."]);
 
 
 
@@ -346,7 +262,7 @@ function orderCoupon(WP_REST_Request $request)
         "date_expiration" => $time,
         "newPoints" =>  $newPoints,
         "currents_points" => $user_points,
-        "message"=> "code promo générer avec succès"
+        "message"=> "Code promo généré avec succès"
     ];
 
     wp_send_json($result);
@@ -367,12 +283,22 @@ function run($message)
 }
 
 
-
-function wp_send_mail($mail = "titann2.15@outlook.com")
+/**
+ * envoie un mail avec une fonction de wordpress car sendinblue ne fonctionnais pas 
+ */
+function wp_send_mail($mail = "titann2.15@outlook.com", $code = "", $percent = 0)
 {
     $to = $mail;
-    $subject = 'The subject';
-    $body = 'The email body content';
+    $subject = 'Félicitations, consultez votre code promo!';
+    $body = '
+        <h1>Félicitation, vous venez de générer votre code promo</h1>
+        <ul>
+            <li>Votre code promo :'.$code.'.</li>
+            <li>Limte maximum d\'achat de 200 €.</li>
+            <li>Votre code promo vous permet de bénéficier de'.$percent.'.</li>
+
+        </ul>
+    ';
     $headers = array('Content-Type: text/html; charset=UTF-8');
 
     wp_mail($to, $subject, $body, $headers);
