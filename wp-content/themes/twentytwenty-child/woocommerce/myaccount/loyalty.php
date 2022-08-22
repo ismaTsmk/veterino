@@ -349,7 +349,8 @@ $user_email = $current_user->user_email;
 
 // dd($user_email);
 
-$points = get_user_meta($current_user->ID, "points")[0];
+$user_meta = get_user_meta($current_user->ID, "points");
+$points =   (isset($user_meta[0])) ? $user_meta[0]  : 0;
 
 $rangeMax = ($points >= 100) ? 100 : $points;
 
@@ -406,6 +407,8 @@ $rangeMax = ($points >= 100) ? 100 : $points;
                 </div>
                 <form class="copy-button" id="generateCoupon">
                     <input type="hidden" name="user_email" value="<?php echo $user_email ?>" />
+                    <input type="hidden" name="user_id" value="<?php echo $user_id ?>" />
+
                     <input type="hidden" name="user_name" value="<?php echo $user_name ?>" />
                     <input id="valuePoints" type="hidden" name="points" value="5" />
 

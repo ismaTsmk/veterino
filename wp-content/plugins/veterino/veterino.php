@@ -120,7 +120,8 @@ add_filter('woocommerce_thankyou_order_received_text', 'woo_change_order_receive
 
 function woo_change_order_received_text($str, $order)
 {
-    $points =  get_user_meta($order->data['customer_id'], "points")[0];
+    // dd($order->get_customer_id());
+    $points =  get_user_meta($order->get_customer_id(), "points")[0];
     $new_str = 'Suite à votre commande vous avez maintenant <strong class="text-success">' . $points . '  points de fidelitées</strong>  ';
     ($points > 49) && $new_str .= "<br/> Vous pouvez dès à présent générer un code promo pour vos prochains achats.";
 
@@ -187,9 +188,17 @@ function orderCoupon(WP_REST_Request $request)
     $data = $request->get_params();
     $percent_choice = intval($data["points"]);
     $user_email = $data["user_email"];
+    $user_id = $data["user_id"];
+
     // wp_send_json($user_email);
     // $current_user = get_userdata(1);
-    $current_user = get_user_by("email",$user_email);
+    // $current_user = get_user_by("email",$user_email);
+    $current_user = get_user_by("id",$user_id);
+
+    if (!$current_user) {
+        wp_send_json(["response" => "ko", "message" => "Erreur rencontrer, réessayer"]);
+    }
+
     $user_name = $current_user->user_login;
     $user_id = $current_user->ID;
     $user_points =  intval(get_user_meta($user_id, "points")[0]);
@@ -295,7 +304,7 @@ function wp_send_mail($mail = "titann2.15@outlook.com", $code = "", $percent = 0
         <ul>
             <li>Votre code promo :'.$code.'.</li>
             <li>Limte maximum d\'achat de 200 €.</li>
-            <li>Votre code promo vous permet de bénéficier de'.$percent.'.</li>
+            <li>Votre code promo vous permet de bénéficier de'.$percent.' % de reduction sur vos prochain achats.</li>
 
         </ul>
     ';
