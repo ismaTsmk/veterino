@@ -55,26 +55,7 @@ $allowed_html = array(
 		esc_url( wc_get_endpoint_url( 'edit-address' ) ),
 		esc_url( wc_get_endpoint_url( 'edit-account' ) )
 	);
-
-	$points =intval( get_usermeta(intval($current_user->ID),"points"));
-	var_dump($points);
 	?>
-	<div class="container">
-		<div class="row">
-			<div class="col-6">
-				<h2>ici genère des codes promo </h2>
-			</div>
-			
-		</div>
-		<div class="row">
-			<div class="col-6 card  rounded-5 d-flex justify-content-center align-items-center" style="min-height:200px ;">
-				<div class="border  border-2 rounded-circle border-5 border-info py-3 px-4 ">
-					<p class="fs-1 text-success pt-2 text-center"><?php echo $points  ?> <br> <span class="fs-6 position-absolute start-0 end-0 text-dark " ><small>points</small> </span>  </p>
-
-				</div>
-			</div>
-		</div>
-	</div>
 
 </p>
 

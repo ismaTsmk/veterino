@@ -1,0 +1,342 @@
+2022-08-19T14:05:43+00:00 CRITICAL Uncaught Error: Failed opening required '/mailin.php' (include_path='.;C:\php\pear') in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:64
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(176): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 64
+
+2022-08-19T14:16:25+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\wamp64\www\veterino\wp-content\plugins\veterino/vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:36
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(157): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 36
+
+2022-08-19T14:16:43+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\wamp64\www\veterino\wp-content\plugins\veterino/vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:36
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(153): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 36
+
+2022-08-19T14:16:55+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\wamp64\www\veterino\wp-content\plugins\veterino/vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:36
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(155): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 36
+
+2022-08-19T14:17:02+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\wamp64\www\veterino\wp-content\plugins\veterino/vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:36
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(158): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 36
+
+2022-08-19T14:19:30+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\wamp64\www\veterino\wp-content\plugins\veterino/vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:36
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(158): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 36
+
+2022-08-19T14:19:46+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\wamp64\www\veterino\wp-content\plugins\veterino/vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:36
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(158): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 36
+
+2022-08-19T14:20:08+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\wamp64\www\veterino\wp-content\plugins\veterino/vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:36
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(159): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 36
+
+2022-08-19T14:22:11+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\wamp64\www\veterino\wp-content\plugins\veterino/vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:35
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(158): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 35
+
+2022-08-19T14:22:28+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\wamp64\www\veterino\wp-content\plugins\veterino/vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:35
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(160): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 35
+
+2022-08-19T14:23:06+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\wamp64\www\veterino\wp-content\plugins\veterino/vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:35
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(155): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 35
+
+2022-08-19T14:23:33+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\wamp64\www\veterino\wp-content\plugins\veterino/vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:35
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(159): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 35
+
+2022-08-19T14:23:57+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\wamp64\www\veterino\wp-content\plugins\veterino/vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:35
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(160): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 35
+
+2022-08-19T14:24:11+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\wamp64\www\veterino\wp-content\plugins\veterino/vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:36
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(160): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 36
+
+2022-08-19T14:24:23+00:00 CRITICAL Uncaught Error: Class "SendinBlue\Client\Configuration" not found in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:38
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(160): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 38
+
+2022-08-19T14:24:29+00:00 CRITICAL Uncaught Error: Class "SendinBlue\Client\Configuration" not found in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:38
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(160): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 38
+
+2022-08-19T14:24:41+00:00 CRITICAL Uncaught Error: Class "SendinBlue\Client\Configuration" not found in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:37
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(160): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 37
+
+2022-08-19T14:24:51+00:00 CRITICAL Uncaught Error: Class "SendinBlue\Client\Configuration" not found in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:37
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(162): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 37
+
+2022-08-19T14:24:58+00:00 CRITICAL Uncaught Error: Class "SendinBlue\Client\Configuration" not found in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:38
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(162): send_mail()
+#1 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): hello_dolly('')
+#2 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#3 C:\wamp64\www\veterino\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\veterino\wp-includes\general-template.php(3058): do_action('wp_footer')
+#5 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\footer.php(64): wp_footer()
+#6 C:\wamp64\www\veterino\wp-includes\template.php(770): require_once('C:\\wamp64\\www\\v...')
+#7 C:\wamp64\www\veterino\wp-includes\template.php(716): load_template('C:\\wamp64\\www\\v...', true, Array)
+#8 C:\wamp64\www\veterino\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\veterino\wp-content\themes\twentytwenty\singular.php(34): get_footer()
+#10 C:\wamp64\www\veterino\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\v...')
+#11 C:\wamp64\www\veterino\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\v...')
+#12 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#13 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 38
+

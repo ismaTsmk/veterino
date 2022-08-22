@@ -1,0 +1,36 @@
+2022-08-21T13:47:57+00:00 CRITICAL Uncaught WC_Data_Exception: Type de remise non valide in C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:856
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\class-wc-coupon.php(527): WC_Data->error('coupon_invalid_...', 'Type de remise ...')
+#1 C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php(281): WC_Coupon->set_discount_type('percednt')
+#2 C:\wamp64\www\veterino\wp-includes\rest-api\class-wp-rest-server.php(1143): orderCoupon(Object(WP_REST_Request))
+#3 C:\wamp64\www\veterino\wp-includes\rest-api\class-wp-rest-server.php(990): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/myplugin/v1/au...', Array, NULL)
+#4 C:\wamp64\www\veterino\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#5 C:\wamp64\www\veterino\wp-includes\rest-api.php(394): WP_REST_Server->serve_request('/myplugin/v1/au...')
+#6 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): rest_api_loaded(Object(WP))
+#7 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#8 C:\wamp64\www\veterino\wp-includes\plugin.php(524): WP_Hook->do_action(Array)
+#9 C:\wamp64\www\veterino\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#10 C:\wamp64\www\veterino\wp-includes\class-wp.php(770): WP->parse_request('')
+#11 C:\wamp64\www\veterino\wp-includes\functions.php(1330): WP->main('')
+#12 C:\wamp64\www\veterino\wp-blog-header.php(16): wp()
+#13 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#14 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php à la ligne 856
+
+2022-08-21T13:54:39+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_User as array in C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php:280
+Stack trace:
+#0 C:\wamp64\www\veterino\wp-includes\rest-api\class-wp-rest-server.php(1143): orderCoupon(Object(WP_REST_Request))
+#1 C:\wamp64\www\veterino\wp-includes\rest-api\class-wp-rest-server.php(990): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/myplugin/v1/au...', Array, NULL)
+#2 C:\wamp64\www\veterino\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 C:\wamp64\www\veterino\wp-includes\rest-api.php(394): WP_REST_Server->serve_request('/myplugin/v1/au...')
+#4 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(307): rest_api_loaded(Object(WP))
+#5 C:\wamp64\www\veterino\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 C:\wamp64\www\veterino\wp-includes\plugin.php(524): WP_Hook->do_action(Array)
+#7 C:\wamp64\www\veterino\wp-includes\class-wp.php(398): do_action_ref_array('parse_request', Array)
+#8 C:\wamp64\www\veterino\wp-includes\class-wp.php(770): WP->parse_request('')
+#9 C:\wamp64\www\veterino\wp-includes\functions.php(1330): WP->main('')
+#10 C:\wamp64\www\veterino\wp-blog-header.php(16): wp()
+#11 C:\wamp64\www\veterino\index.php(17): require('C:\\wamp64\\www\\v...')
+#12 {main}
+  thrown dans C:\wamp64\www\veterino\wp-content\plugins\veterino\veterino.php à la ligne 280
+
